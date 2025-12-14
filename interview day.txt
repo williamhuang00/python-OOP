@@ -1,0 +1,9 @@
+
+  Second Round: Architectural Design and current project discussion. a.Explained the design of the current project working on and follow up questions related to optimization, services being used. b.A customer walks into the store and want a buy products in the grocery store and the attendant return the receipt. Design and implement the architecture of this Inventory Managment system. 
+  
+  
+  Third Round : Lunch 
+  
+  Fourth Round: 1. How does your daily day look like at your work (time spent doing development and support work)? 2.Have you broken any piece of code which was working earlier and deployed to production. How did you resolve and what did you learn from it? 3.What is the exciting work/technology you want to pursue in the future.? 
+  
+  Fifth Round: Recruiter 1.If given options, which team would you like to go ahead with forward - A,B,C? 2.Do you have any job offer or job interview pending right now? 3.What kind of relocation benefits you will need? They gave a tour of the entire facility where traders sit like elbow to elbow,plus there is a fitness center or gym which offers yoga classes as well.
