@@ -57,10 +57,13 @@ class VideoGame(Item):
         super().__init__(id, title, base_price)
         self.genres = genres
     
-    def __str__(self) -> None:
+    def __str__(self) -> str:
         base_info = super().__str__() #() after super and the magic method
 
         return f"{base_info}, genres - {self.genres}"
+    
+    def get_price(self) -> float:
+        return self.base_price
 
 class Size(Enum):
     SMALL = "Small"
@@ -68,11 +71,20 @@ class Size(Enum):
     LARGE = "Large"
 
 class Shirt(Item):
-    def __init__(self, id, title, base_price, size):
+    def __init__(self, id, title, base_price, size) -> None:
         super().__init__(id, title, base_price)
         self.size = size
     
+    def get_price(self) -> float:
+        match self.size:
+            case Size.MEDIUM:
+                multiplier = 1.2
+            case Size.LARGE:
+                multiplier = 1.5
+            case _:
+                multiplier = 1
 
+        return self.base_price * multiplier
 
 
 game1 = VideoGame(0, 'sonic', 9.99, [Genre.PLATFORMER, Genre.STRATEGY])
