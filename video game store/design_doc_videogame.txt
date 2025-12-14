@@ -1,0 +1,28 @@
+'''
+item:
+- id
+- title
+- get_price
+
+video_game(item):
+- genre(s)
+
+shirt(item):
+- size
+
+console(item):
+- storage (GB)
+
+video_game_store:
+- handles operations regarding store
+- add to inventory
+- add to cart
+- remove from cart
+- checkout
+
+using a get_price abstract method in the abstract class for item allows 
+child classes to implement their own custom pricing logic unique to them
+
+list representation for cart items would preserve the order in which items were added to the cart.
+may be useful for printing a receipt
+'''
