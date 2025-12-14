@@ -1,0 +1,24 @@
+1. Design Overview (OOP Principles)
+Core Objects
+
+Product (base class)
+
+ClothingItem (inherits from Product)
+
+Customer
+
+ShoppingCart
+
+Order
+
+Store
+
+Key OOP Concepts Used
+
+Encapsulation → Each class manages its own data
+
+Inheritance → ClothingItem extends Product
+
+Composition → Store has products, ShoppingCart has items
+
+Polymorphism → Different clothing types calculate prices the same way
