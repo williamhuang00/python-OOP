@@ -1,0 +1,5 @@
+https://www.google.com/search?q=1)+Topics+like+Polymorphism%2C+MRO%2C+magic+functions+in+Python&sourceid=chrome&ie=UTF-8
+
+MRO (Method Resolution Order)
+Magic Functions (Dunder Methods)
+Polymorphism
