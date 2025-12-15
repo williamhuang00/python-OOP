@@ -86,6 +86,35 @@ class Shirt(Item):
 
         return self.base_price * multiplier
 
+class VideoGameStore:
+    def __init__(self, address, owner) -> None:
+        self.address = address
+        self.owner = owner
+        self.orders = []
+
+# Items are products.
+# Line items are purchases.
+# Orders are collections of purchases.
+
+class Order:
+    def __init__(self) -> None:
+        self.cart = [] #(title, quantity, quantity*get_price())
+        #line-item concept which contains (item, quantity)
+        self.final_total = 0 #we need to update this after each add/remove, otherwise calculate once in helper method
+
+    def add_to_cart(self):
+        #rules to prevent add abuse
+        pass
+
+    def remove_from_cart(self):
+        #rules to prevent remove abuse
+        pass
+
+    def checkout(self, store_obj):
+        #rules to prevent remove abuse
+        store_obj.orders.append(self)
+
+
 
 game1 = VideoGame(0, 'sonic', 9.99, [Genre.PLATFORMER, Genre.STRATEGY])
 shirt1 = Shirt(1, 'lego t shirt', 35.40, Size.MEDIUM)
