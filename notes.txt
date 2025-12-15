@@ -1,0 +1,2 @@
+# assume that all class attributes are private and accessed through their respective
+
