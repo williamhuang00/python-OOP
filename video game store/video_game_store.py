@@ -31,11 +31,6 @@ from abc import ABC, abstractmethod
 from enum import Enum
 
 class Item(ABC):
-    def __init__(self, id, title, base_price) -> None:
-        self.id = id
-        self.title = title
-        self.base_price = base_price
-    
     @abstractmethod
     def get_price(self) -> float:
         #let children implement their own pricing, enforce contract
